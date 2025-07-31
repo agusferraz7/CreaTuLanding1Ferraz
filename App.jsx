@@ -3,12 +3,12 @@ import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 
 function App() {
-  return (
+    return (
     <div>
-      <NavBar />
-      <ItemListContainer greeting="¡Bienvenido a Vino Nacional!" />
+        <NavBar />
+        <ItemListContainer greeting="¡Bienvenido a Vino Nacional!" />
     </div>
-  );
+    );
 }
 
 export default App;

@@ -1,10 +1,13 @@
 import React from 'react';
 import CartWidget from './CartWidget';
+import logo from '../assets/logo.png'; // Asegurate de que la ruta sea correcta
 
 const NavBar = () => {
   return (
     <nav style={styles.nav}>
-      <div style={styles.logo}>Vino Nacional</div>
+      <div style={styles.logoContainer}>
+        <img src={logo} alt="Logo Vino Nacional" style={styles.logo} />
+      </div>
       <ul style={styles.links}>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Productos</a></li>
@@ -24,9 +27,12 @@ const styles = {
     backgroundColor: '#6b1f1f',
     color: 'white'
   },
+  logoContainer: {
+    width: '150px'
+  },
   logo: {
-    fontWeight: 'bold',
-    fontSize: '1.5rem'
+    width: '100%',
+    height: 'auto'
   },
   links: {
     listStyle: 'none',
